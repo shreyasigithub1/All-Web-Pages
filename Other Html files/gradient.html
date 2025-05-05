@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+       div{
+        text-align: center;
+       }
+       div > div{
+        background-color:lightcoral;
+        width:200px;
+        height:300px;
+        display:inline-block;
+        }
+        div#linear > div:first-of-type{
+            /* background: linear-gradient(red,blue,green); */
+            background: linear-gradient(red 50%,blue,green);
+        }
+        div#linear > div:nth-of-type(2)
+        {
+            background:linear-gradient(to right,red,blue);
+        }
+        div#linear > div:last-of-type{
+            /* background: linear-gradient( to top right,red,blue,green); */
+            background: linear-gradient( 280deg,red,blue,green);
+        }
+        div#radial > div:first-of-type{
+            background: radial-gradient(ellipse at 0%,red,blue,green);
+            /* background: radial-gradient(circle at 0%,red,blue,green); */
+        }
+        div#radial > div:nth-of-type(2)
+        {
+            background:radial-gradient(closest-side at 40px 40px,red,blue,green);
+        }
+        div#radial > div:last-of-type{
+            
+            background: radial-gradient(farthest-side at 40px 40px,red,blue,green);
+        }
+        /*The "at 40px 40px" is the center.and the closest side is ,the last color which is green is closing 
+        from the closest side of the center and for the farthest side ,the last color which is green is 
+        closing in the fartheast side from the center.
+        ecclipse at 0% means the the center will be at the left ,if given 50% the center will be in the middle
+        and if given 100% it will be in the right.  */
+
+        div#conic > div:first-of-type{
+            background: conic-gradient(red,blue,green,yellow,orange);
+        }
+        div#conic > div:nth-of-type(2){
+            background:conic-gradient(from 45deg,red,blue,green);
+        }
+        div#conic > div:last-of-type{
+            background: conic-gradient(from 90deg at 0 0,red,blue,green);
+        }
+        /* 
+        1.conic-gradient(red,blue,green):There is acenter in the middle. It starts from red and finishes with green.
+        2.conic-gradient(from 45deg,red,blue,green):It will start from 45 degree 
+        3.conic-gradient(from 90deg at 0 0,red,blue,green):The pixel point (0,0) means the top-left corner of the div
+        containerand from there the pixel increases at x and y direction. Now here (0 deg at (0,0) means thar the 
+        90deg will start from (0,0),rather the center will be at (0,0),from that the color wheel will start.
+        That is why only the bottom part of the color wheel will be visible in the div container.The upper part will 
+        not be visible*/
+    </style>
+</head>
+<body>
+    <div id="linear">
+        <p>Linear Gradient</p>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="radial">
+        <p>Radial Gradient</p>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="conic">
+        <p>Conical Gradient</p>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

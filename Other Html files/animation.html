@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background-color: bisque; */
+      }
+      .ball {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        border-radius: 50%;
+         background: conic-gradient(red,orange,yellow,green,blue); 
+        /* background-color: lightblue; */
+        /* animation-name: slide;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: both; */
+        /* animation-timing-function: ease-in-out;
+            animation-iteration-count: 3;
+            animation-direction: alternate; */
+            animation:slide 2s ease-in-out;
+      }
+      @keyframes slide {
+        /* from{
+                transform:translateX(0%);
+                background-color: lightgreen;
+            }
+            to{
+                transform:translateX(350px);
+                background-color:lightpink;
+            } */
+        0% {
+          transform: translate(0%) rotate(90deg);
+        }
+        33% {
+          transform: translateY(450px) rotate(120deg);
+        }
+        66% {
+          transform: translate(450px,450px) rotate(180deg);
+        }
+        100% {
+          transform: translate(450px,0%) rotate(270deg); 
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in & Sign-up Page</title>
+    <link rel="stylesheet" href="sign-in.css" />
+  </head>
+  <body>
+    <!-- Option section -->
+    <section class="sign-in-sign-up-toggle">
+      <input type="radio" id="sign-in" name="login" value="sign-in" checked />
+      <label  class="sign-in-tab" for="sign-in">Sign-in</label>
+
+      <input type="radio" id="sign-up" name="login" value="sign-up" />
+      <label class="sign-up-tab" for="sign-up">Sign-up</label>
+    </section>
+<!-- Sign-in section -->
+    <section class="sign-in">
+      
+
+      <h2>Sign-in</h2>
+<form action="">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Username"
+        required
+      />
+
+      <input
+        type="password"
+        id="in-password"
+        name="up-password"
+        placeholder="Password"
+        required
+      />
+
+      <button>Sign-in</button>
+    </form>
+      <p>Don't have an account? <label for="sign-up">Sign Up here</label></p>
+    </section>
+    <!--Sign-up section -->
+    <section class="sign-up">
+      <h2>Sign-up</h2>
+     
+<form action="">
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Fullname"
+        required
+      />
+
+      <input
+        type="email"
+        id="eid"
+        name="eid"
+        placeholder="Email address"
+        required
+      />
+
+      <input
+        type="password"
+        id="up-password"
+        name="up-password"
+        placeholder="Password"
+        required
+      />
+
+      <button>Sign-up</button>
+    </form>
+      <p>Already have an account? <label for="sign-in">Sign in here</label>
+       </p>
+    </section>
+  </body>
+</html>

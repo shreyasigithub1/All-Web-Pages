@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: rgb(162, 162, 7);
+        margin: 0;
+        /* position:absolute; */
+        /* top:200px;
+            left:20px; */
+        /* bottom:0px; */
+      }
+      h2 {
+        margin: 0;
+        background-color: black;
+        color: white;
+        /* position:absolute;
+            bottom:0px; */
+        /* position: fixed;
+            left:100px;
+            left:100px; */
+        position: sticky;
+        top: 0px;
+      }
+      /* h2 is residing inside main and main is having  afixed width of 75%.But if we give a lenghthy 
+        line to h2 and it crosses the 75% mark it will cross.
+         */
+      h3 {
+        background-color: rgb(108, 104, 104);
+      }
+      aside {
+        background-color: rgb(108, 104, 104);
+        display: inline-block;
+        vertical-align: top;
+        width: 24%;
+        height: 200px;
+      }
+      main {
+        display: inline-block;
+        width: 75%;
+        text-align: justify;
+        position: relative;
+      }
+      #maindiv {
+        border: 2px solid red;
+      }
+      #overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        position: absolute; /* Ensures it covers the entire screen */
+        top: 0; /* Start from the top of the viewport */
+        left: 0; /* Start from the left of the viewport */
+      }
+      body {
+        position: relative;
+      }
+      #popup {
+        position: fixed;
+        width: 200px;
+        height: 150px;
+        background-color: aquamarine;
+        left: 30%;
+        top: 40%;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <h1>Positioning in CSS</h1>
+    <div id="maindiv">
+      <main>
+        <h2>Introduction to position in CSS</h2>
+        <p>
+          Positioning allows us to produce interesting results by overriding
+          normal document flow. What if you want to slightly alter the position
+          of some boxes from their default flow position to give a slightly
+          quirky, distressed feel? Positioning is your tool. Or what if you want
+          to create a UI element that floats over the top of other parts of the
+          page and/or always sits in the same place inside the browser window no
+          matter how much the page is scrolled? Positioning makes such layout
+          work possible.
+        </p>
+
+        <h3>Static Position</h3>
+        <p>Static positioning is the default that every element gets</p>
+
+        <h3>Relative Position</h3>
+        <p>
+          Relative positioning is the first position type we'll take a look at.
+          This is very similar to static positioning, except that once the
+          positioned element has taken its place in the normal flow, you can
+          then modify its final position, including making it overlap other
+          elements on the page.
+        </p>
+
+        <h3>Absolute Position</h3>
+        <p>
+          An absolutely positioned element no longer exists in the normal
+          document flow. Instead, it sits on its own layer separate from
+          everything else. This is very useful: it means that we can create
+          isolated UI features that don't interfere with the layout of other
+          elements on the page.
+        </p>
+
+        <h3>Fixed Position</h3>
+        <p>
+          The element is removed from the normal document flow, and no space is
+          created for the element in the page layout. The element is positioned
+          relative to its initial containing block, which is the viewport in the
+          case of visual media. Its final position is determined by the values
+          of top, right, bottom, and left.
+        </p>
+
+        <h3>Sticky Position</h3>
+        <p>
+          A stickily positioned element is an element whose computed position
+          value is sticky. It's treated as relatively positioned until its
+          containing block crosses a specified threshold (such as setting top to
+          value other than auto) within its flow root (or the container it
+          scrolls within), at which point it is treated as "stuck" until meeting
+          the opposite edge of its containing block.
+        </p>
+      </main>
+      <aside>
+        <h3>Position is CSS</h3>
+        <ul>
+          <li>Static</li>
+          <li>Relative</li>
+          <li>Absolute</li>
+          <li>Fixed</li>
+          <li>Sticky</li>
+        </ul>
+      </aside>
+    </div>
+    <div id="popup">I am a Pop-up Window!!</div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Properties</title>
+    <style>
+        #outer{
+            background: red url("../Multimedia/sunrise-view-morning-gives-positive-start-28419-image128299618.jpg.webp") no-repeat center;
+            /* filter: opacity(50%); */
+            /* filter: blur(5px); */
+            /* filter:drop-shadow(10px -10px 10px red); */
+            /* filter:hue-rotate(120deg); */
+            /* filter:invert(100%); */
+            width: 700px;
+            height: 500px; 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+        #inner{
+            font-weight: bold;
+            padding:20px;
+            background-color:rgba(255,255,255,0.3);
+            backdrop-filter: blur(5px);
+            /* backdrop-filter: invert(100%); */
+            backdrop-filter: sepai(100%);
+
+            margin:auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+             <p>Sunrise</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid website layout</title>
+    <style>
+      /* body,html{
+            margin:0;
+        }
+        .container{
+            height:80vh;
+            display:grid;
+            border:1px solid;
+            grid-template-columns: 300px auto;
+            grid-template-rows: 150px 450px auto;
+        }
+        .divisions{
+            border:1px solid;
+            text-transform: uppercase;
+        }
+        #header{
+            background-color: lightblue;
+            grid-column: 1/span 2;
+        }
+        #navbar{
+            background-color: lightgreen;
+           
+            
+        }
+        #main{
+            background-color: lightpink;
+            
+        }
+        #footer{
+            background-color: lightslategray;
+            grid-column: 1/3;
+            
+        }  */
+
+      .container {
+        height: 90vh;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 100px 1fr 30px;
+        grid-template-areas: "head head" "nav main" "nav foot";
+      }
+      #header {
+        grid-area:head;
+        background-color: lightblue;
+      }
+      #navbar {
+        grid-area:nav;
+        background-color: lightgreen;
+      }
+      #main {
+        grid-area:main;
+        background-color: lightpink;
+      }
+      #footer {
+        grid-area:foot;
+        background-color: lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="divisions" id="header">Header</div>
+      <div class="divisions" id="navbar">Nav Bar</div>
+      <div class="divisions" id="main">Main Section</div>
+      <div class="divisions" id="footer">Footer</div>
+    </div>
+  </body>
+</html>
+
+
+<!-- .section1 {
+    background-color: #1abc9c;
+      grid-area:section1;
+  }
+  
+  .section2 {
+    background-color: #3498db;
+      grid-area:section2;
+  }
+  
+  .section3 {
+    background-color: #9b59b6;
+      grid-area:section3;
+  }
+  
+  .section4 {
+    background-color: #e74c3c;
+      grid-area:section4;
+  }
+  .grid-container{
+      display:grid;
+      grid-template-columns:auto auto auto auto;
+      grid-template-rows:100px 100px 100px;
+      grid-gap:10px;
+      grid-template-areas:"section1 section2" "section3 section3" "section4 section4";
+  } -->

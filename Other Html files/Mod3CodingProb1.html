@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesting Places</title>
+</head>
+<body>
+    <h1>Interesting Places</h1>
+    <h3>Check out these Interesting places by clicking on the links below</h3>
+    <a href="#agra" onclick="loadContent()">Agra</a>&nbsp;&nbsp;
+   <a href="#puducherry" onclick="loadContent()">Puducherry</a>&nbsp;&nbsp; 
+    <a href="#amritsar" target="_self">Amritsar</a>
+
+     <div id="content-area">
+        <!-- Content will appear here -->
+    </div>
+
+    <script>
+        function loadContent() {
+            document.getElementById("content-area").innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.79425661844!2d77.89761175386975!3d27.176150424795676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1731419095476!5m2!1sen!2sin" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="agra"></iframe>';
+        }
+    </script>
+    
+
+    <script>
+        function loadContent() {
+            document.getElementById("content-area").innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.82044558538!2d79.73558683131053!3d11.936284572725446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab8e49cfcf%3A0xcc6bd326d2f0b04e!2sPuducherry!5e0!3m2!1sen!2sin!4v1731419145217!5m2!1sen!2sin" 
+     width="600"
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      id="puducherry"> </iframe>';
+        }
+    </script>
+    
+    
+
+     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.82044558538!2d79.73558683131053!3d11.936284572725446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab8e49cfcf%3A0xcc6bd326d2f0b04e!2sPuducherry!5e0!3m2!1sen!2sin!4v1731419145217!5m2!1sen!2sin" 
+     width="600"
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      id="puducherry"></iframe>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108704.38882573802!2d74.78771926942613!3d31.633517690039422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0xeea2605bee84ef7d!2sAmritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1731419184766!5m2!1sen!2sin" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      id="amritsar"></iframe>
+       -->
+
+    
+</body>
+</html>

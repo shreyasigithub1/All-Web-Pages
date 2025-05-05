@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+     #container{
+            display:flex; 
+            border:1px solid black;
+            flex-direction:row;
+            flex-wrap: wrap; 
+            /* align-content: flex-start ; */
+            height:400px; 
+            width:100%;
+            /* align-items: center;
+            justify-content: center; */
+            /* align-content: stretch  ; */
+            
+        }
+        .box{
+            width:50%;
+            height:100px;
+            border-radius: 5px;
+            text-align: center;
+            /* border:2px solid;
+            color:white; */
+            font-size: 2em;
+        }
+        #box1{
+            background-color: lightcoral;
+            /* order:1; */
+            /* flex-shrink: 2; */
+        }
+        #box2{
+            background-color:lightyellow;
+            /* order:2; */
+            /* flex-shrink:3 */
+            }
+        #box3{
+            background-color:lightseagreen;
+            /* flex-shrink:1; */
+            
+        }
+        #box4{
+            background-color: lightgreen;
+            /* order:-1; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <!-- <div class="box" id="box4">4</div>  -->
+        <!-- <div class="box" id="box1">5</div>
+        <div class="box" id="box2">6</div>
+        <div class="box" id="box3">7</div>
+        <div class="box" id="box4">8</div> -->
+    </div>
+</body>
+</html>

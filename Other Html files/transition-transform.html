@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Transition-Transform</title>
+    <style>
+      .box {
+        margin: auto;
+        margin-top: 100px;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        font-size: 24px;
+        color: azure;
+        text-align: center;
+        border: solid black;
+        border-width: 10px 5px;
+        transition: transform 2s ease-in-out;
+      }
+      body:hover .box {
+        transform: rotate(0.5turn);
+        transform: scale(0.5, 1.5);
+        transform: skew(30deg, 50deg);
+        transform: rotate(120deg) translate(100px) scale(0.5);
+      }
+
+      /* For transition */
+      /* body:hover .box {
+  background-color: blue;
+  color: yellow;
+  width: 300px;
+}
+
+.trans {
+  transition-duration: 2s;
+  transition-property: all;
+  transition-delay: 1s; 
+  transition: all 1s ease-in 1s;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0, 0.96, 0.96, -0.14);
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.stepstart {
+  transition-timing-function: step-start;
+}
+.stepend {
+  transition-timing-function: step-end;
+}
+.steps {
+  transition-timing-function: steps(5);
+} */
+    </style>
+  </head>
+  <body>
+    <!-- For transition -->
+
+    <!-- <div id="div1">Transition</div>
+    <div id="div2">Transition</div>
+     -->
+    <!-- <div class="box trans">Linear</div>
+    <div class="box trans ease-in">Ease-in</div>
+    <div class="box trans ease-out">Ease-out</div>
+    <div class="box trans ease-in-out">Ease-in-out</div>
+    <div class="box trans step-start">Step-start</div>
+    <div class="box trans step-end">Step-end</div>
+    <div class="box trans step">Steps</div> -->
+
+    <!-- For transform -->
+     
+    <div class="box">Transform</div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       input:active{
+              background-color: chartreuse;
+       }
+       a:link{
+              color:black;
+       }
+       input:invalid{
+              background-color: pink;
+       }
+    </style>
+</head>
+<body>
+    <form action="" method="get" target="_blank">
+       <fieldset>
+              <legend>Personal Information</legend>
+        <label for="fullname">Fullname</label>
+        <input type="text" 
+               id="fullname"
+               name="fullname"
+               value="shreyasi"
+               required/>
+        <br/><br/>
+        
+        <label for="email">Email</label>
+        <input type="email" 
+               id="email"
+               name="email"
+               placeholder="abc@gmail.com"
+               required/>
+        <br/><br/>
+
+        <label for="pnumber">Phone Number</label>
+        <input type="tel" 
+               id="pnumber"
+               name="pnumber"
+               placeholder="+91-97453421657"
+               required/>
+        <br/><br/>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" 
+               id="dob"
+               name="dob"
+               required
+               min="2021-01-01"
+               max="2025-12-01"
+               />
+        <br/><br/>
+       </fieldset>
+
+       <fieldset>
+        <legend>Trip Details</legend>
+        <label for="ad">Arrival Date</label>
+        <input type="datetime-local" 
+               id="ad"
+               name="ad"
+               required/>
+        <br/><br/>
+
+        <label for="dd">Departure date</label>
+        <input type="datetime-local" 
+               id="dd"
+               name="dd"
+               required/>
+        <br/><br/>
+
+       <!-- Number of travellers -Number -->
+        <label for="not">Number of travellers</label>
+        <input 
+        type="number" 
+        id="not"
+        name="travellers"/>
+        <br/><br/>
+
+       <!-- Accomodation preference-select -->
+       <label for="ac">Accomodation preference</label>
+       <select id="ac" name="Accomodation">
+              <optgroup label="Hotels">
+                     
+                     <option value="3 star">3 star</option>
+                     <option value="4 star">4 star</option>
+                     <option value="5 star">5 star</option>
+              </optgroup>
+              
+              <option value="resort">Resort</option>
+              <option value="villa" selected>Villa</option>
+              <option value="guesthouse">Guest House</option>
+       </select>
+      <br/><br/> 
+       <!-- Preferred activities-Checkbox -->
+        <fieldset>
+       <legend>Preferred Activities</legend>
+        <input 
+       type="checkbox"
+        id="sn"
+        name="Activity"
+        value="Snorkelling"/>
+       <label for="sn">Snorkelling</label>
+       <br/><br/>
+      
+
+       <input 
+       type="checkbox"
+        id="hk"
+        name="Activity"
+        value="Hiking"/>
+       <label for="hk">Hiking</label>
+       <br/><br/>
+
+       <input 
+       type="checkbox"
+        id="sp"
+        name="Activity"
+        value="Spa"
+        checked/>
+       <label for="sp">Spa</label>
+       <br/><br/>
+       
+</fieldset>
+
+       <!-- Baby on board -radio -->
+        <p><b>Baby on board</b></p>
+       <label for="yes">Yes</label>
+       <input
+       type="radio"
+       id="yes"
+       name="babyonboard"
+       value="yes"/>
+       <br/><br/>
+
+       <label for="no">No</label>
+       <input
+       type="radio"
+       id="no"
+       name="babyonboard"
+       value="no"
+       checked/>
+       <br/><br/>
+
+       <!-- Special request- textarea -->
+        <p><b>Special Request</b></p>
+      <textarea cols="40" rows="10">
+
+      </textarea> 
+      
+       <br/><br/>
+</fieldset>
+
+
+<!-- <input type="submit" value="Submit"/> 
+<input type="reset"/>
+<input type="button" value="Button"/>
+<button type="button">Button2</button>-->
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<!-- <button type="button"><img src="../Multimedia/Paradise Island.jpg" width="20" height="20"/></button> -->
+    </form>
+</body>
+</html>

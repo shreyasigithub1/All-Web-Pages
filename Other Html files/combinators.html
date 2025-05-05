@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+      /* .container p{ //Descendent combinator
+        color:red;
+      } */
+      /* .container > p{ //child combinator
+        color:blue;
+      } */
+      
+     /* h1 + p{  //Adjacent sibling combinator/Next sibling combinator
+        color:darkviolet;
+     } */
+     /* h1 ~ p{ //General sibling combinator/Subsequent sibling combinator
+        color:darkviolet;
+     } */
+     /* .container div span { //Applying Descendent combinator
+         color: red;
+        } */
+
+        /* .container div + p { //div is a child of container and the last p is adjacent sibling of div
+           color: orange;
+        } */
+        /*   */
+        /*   */
+          /* .container h1 + p {
+              font-weight: bold;
+           } */
+           /* .room p.room-price{
+            color:aqua;
+           } */
+            /* p:first-child{
+                border:2px solid red;
+            } */
+            /* p:last-child{
+                border:2px solid red;
+            } */
+            /* p:only-child{
+                border:2px solid red;
+            } */
+             /* li:nth-child( n+2 ){
+                border:3px dotted green;
+
+             } */
+             /* li:nth-child( even ){
+                border:3px dotted green;
+
+             } */
+             button:active {
+    color: darkred;
+    background-color: yellow;
+    border: 2px solid black;
+    font-size: 20px;  /* Increase font size to make the change more noticeable */
+}
+ .nesteddiv{
+  color:blueviolet
+ }
+
+.list{
+  font-size:30px;
+}
+
+   </style>
+</head>
+<body>
+
+     <div class="container">
+         <h1>Combinator</h1>
+         <p>This is a paragraph inside a container</p> 
+        <div class="nesteddiv">
+            <p>p is the first child</p>
+            <h1>Nested div</h1>
+            <p>This the paragraph1 inside nested container</p>
+            <span class="nesteddiv list">This is a span inside a nested div</span>
+            <p>This the paragraph2 inside nested container <span>span</span></p>
+        </div>
+        <p>This is a paragraph inside the nested div</p>
+        <h3>h3 heading</h3>
+        <p> paragraph</p>
+        <section>
+            <p>only child</p>
+        </section>
+        <ul class="list"> 
+          <li>1st child</li>
+          <li>2nd child</li>
+          <li>3rd child</li>
+          <li>4th child</li>
+          <li>5th child</li>
+        </ul>
+    </div> 
+      <button>Submit</button>
+
+
+    <!-- <h1>Hotel Management System</h1>
+    <div id="room-1" class="room">
+      <h2 class="room-number">Room 101</h2>
+      <p class="room-type">Single</p>
+      <p class="room-price">$100 per night</p>
+    </div>
+
+    <div id="room-2" class="room">
+      <h2 class="room-number">Room 102</h2>
+      <p class="room-type">Double</p>
+      <p class="room-price">$150 per night</p>
+    </div> -->
+    
+</body>
+</html>

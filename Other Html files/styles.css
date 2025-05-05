@@ -1,0 +1,130 @@
+/* Inline style will always take preference over internal or external styles
+In between external or internal style sheets ,the one the browser will read last will take preference
+If we first gives the link tag to the external sheets then the internal style tag.The internal style 
+tag will take preference.
+ */
+
+ /* The selector preference
+ id>class>type
+  */
+/*
+//type selector 
+h2{
+color: blueviolet;
+}
+p{
+    color:palevioletred;
+}
+ //class selector 
+.desc_res{
+    color: darkgreen;
+}
+//id selector 
+#top{
+    color:cadetblue;
+    font-size: 50px;
+}
+
+li{
+  color: darkmagenta;  //All the li will change color except the class styles, class selector takes preference over type selector 
+}
+
+#des_1{
+    color:yellow;  //Over class selector ,id selector will be prefered 
+}
+
+li{
+    color:darkslategray; //this will be applied over the previous li.Yhis is called cascading 
+}
+
+p{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px 4px red;
+    font-family: fantasy;
+    font-weight: 700;
+}
+*/
+
+/* div{
+    background-color: blueviolet;
+    width:50%;
+    height:3cm;
+} */
+
+
+/*body{
+    font-size:30px;
+}
+div{
+    background-color: blueviolet; 
+    width: 2em; //em is related to parent tag size ,it is body
+    height: 4em;
+}*/
+
+/*html{
+    font-size:30px;
+}
+div{
+    background-color: blueviolet; 
+    width: 2rem; //rem is related to root tag size ,it is html
+    height: 4rem;
+}*/
+
+/* div{
+    background-color: blueviolet; 
+    background-image: url(../Multimedia/favicon.ico);//can add more than one image as a background
+    background-repeat:no-repeat;//repeat-x or repeat-y can be done too
+    background-position: center;  //multiple options are there
+    background-size: cover; //contain -one image will fit in the div and if space another image will be there too.
+    //but in case of cover whole image will try to fit in even if it had to be cropped 
+    background-attachment: fixed; //the background image will not be scrolling with the text on it.
+} */
+
+
+/* #outer{
+background-color: rgba(0,255,0,0.5);
+width:100vw;
+height:100vh;
+}
+#inner{
+background-color: hsl(0deg,100%,50%);
+width:50%;
+height:50%;
+} */
+
+/* 
+1.color:red;
+2.color:#00ff00;
+3. rgb(255,0,0)
+4.rgba(o,255,0,1) a stands for opacity
+5.hsl(hue,saturation,lightness) h is in degrees,s and l are in %
+6.hsla ,a stands for opacity
+*/
+
+a{
+    outline:1px solid red;
+    background-color: aquamarine;
+    padding: 5px;
+    text-decoration: none;
+    cursor:progress;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
